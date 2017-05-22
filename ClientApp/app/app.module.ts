@@ -5,25 +5,26 @@ import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
-import { CounterComponent } from './components/counter/counter.component';
+import { DefinitionsComponent } from './components/definitions/definitions.component';
 
 @NgModule({
     bootstrap: [ AppComponent ],
     declarations: [
         AppComponent,
         NavMenuComponent,
-        CounterComponent,
         FetchDataComponent,
-        HomeComponent
+        HomeComponent,
+        DefinitionsComponent
     ],
     imports: [
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
         RouterModule.forRoot([
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', component: HomeComponent },
-            { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
-            { path: '**', redirectTo: 'home' }
+            { path: '', component: HomeComponent },
+            { path: 'definitions', component: DefinitionsComponent },
+            { path: 'recalculation', component: HomeComponent },
+            { path: 'validators', component: FetchDataComponent },
+            { path: 'seeds', component: FetchDataComponent },
+            { path: '**', component: HomeComponent }
         ])
     ]
 })

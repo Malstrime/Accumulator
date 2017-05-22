@@ -13,18 +13,24 @@
         <div class='navbar-collapse collapse'>
             <ul class='nav navbar-nav'>
                 <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/home']">
+                    <a [routerLink]="['/definitions']">
                         Accumulator definitions
                     </a>
                 </li>
                 <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/counter']">
+                    <a [routerLink]="['/recalculation']">
                         Accumulator recalculation
                     </a>
                 </li>
                 <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/fetch-data']">
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
+                    <a [routerLink]="['/validators']">
+                        <!--<span class='glyphicon glyphicon-th-list'></span> -->
+                        Accumulator validators
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/seeds']">
+                        Accumulator seeds
                     </a>
                 </li>
             </ul>
