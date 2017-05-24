@@ -1,3 +1,4 @@
+import { AccumulatorListComponent } from './components/definitions/acc-list/acc-list.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { UniversalModule } from 'angular2-universal';
@@ -14,7 +15,8 @@ import { DefinitionsComponent } from './components/definitions/definitions.compo
         NavMenuComponent,
         FetchDataComponent,
         HomeComponent,
-        DefinitionsComponent
+        DefinitionsComponent,
+        AccumulatorListComponent
     ],
     imports: [
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { AccumulatorListComponent } from './acc-list/acc-list.component';
 
 @Component({
     selector: 'definitions',

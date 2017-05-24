@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>GUID</th>
+            <th>Name</th>
+            <th>AccumulatorType</th>
+            <th>EmploymentLevel</th>
+            <th>IsSynced</th>
+            <th>SyncedField</th>
+            <th>SyncDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let accumulator of accumulators">
+            <td>{{accumulator.AccumulatorId}}</td>
+            <td>{{accumulator.Name}}</td>
+            <td>{{accumulator.AccumulatorType}}</td>
+            <td>{{accumulator.EmploymentLevel}}</td>
+            <td>{{accumulator.IsSynced}}</td>
+            <td>{{accumulator.SyncedField}}</td>
+            <td>{{accumulator.SyncDate}}</td>
+        </tr>
+    </tbody>
+</table>
